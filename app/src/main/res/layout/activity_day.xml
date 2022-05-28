@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:hint="Describe your day..."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/tvRateDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate your day:"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/etDay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toRightOf="@+id/btnOne"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnThree"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toRightOf="@+id/btnTwo"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnFour"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toRightOf="@+id/btnThree"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnFive"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toRightOf="@+id/btnFour"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnSix"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDay"
+        app:layout_constraintLeft_toRightOf="@+id/btnFive"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnOne"
+        app:layout_constraintLeft_toLeftOf="parent"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

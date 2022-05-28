@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/statsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATS"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/monthlyStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MONTHLY STATS"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/statsTitle"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/monthlyGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOALS"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/monthlyStats"
+        app:layout_constraintTop_toBottomOf="@id/monthlyStats"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/monthlyGoalsStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/monthlyGoals"
+        app:layout_constraintLeft_toRightOf="@id/monthlyGoals"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/monthlyHabits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HABITS"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/monthlyStats"
+        app:layout_constraintTop_toBottomOf="@id/monthlyGoals"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/monthlyHabitStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/monthlyHabits"
+        app:layout_constraintLeft_toRightOf="@id/monthlyHabits"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/weeklyStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEEKLY STATS"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/monthlyHabits"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/weeklyGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOALS"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/weeklyStats"
+        app:layout_constraintTop_toBottomOf="@id/weeklyStats"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/weeklyGoalsStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/weeklyGoals"
+        app:layout_constraintLeft_toRightOf="@id/weeklyGoals"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/weeklyHabits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HABITS"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/weeklyStats"
+        app:layout_constraintTop_toBottomOf="@id/weeklyGoals"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/weeklyHabitStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/weeklyHabits"
+        app:layout_constraintLeft_toRightOf="@id/weeklyHabits"
+        ></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

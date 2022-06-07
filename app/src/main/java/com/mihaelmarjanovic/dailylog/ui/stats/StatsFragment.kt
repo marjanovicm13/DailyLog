@@ -1,22 +1,23 @@
-package com.mihaelmarjanovic.dailylog
+package com.mihaelmarjanovic.dailylog.ui.stats
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.mihaelmarjanovic.dailylog.databinding.FragmentCalenderBinding
+import com.mihaelmarjanovic.dailylog.R
+import com.mihaelmarjanovic.dailylog.databinding.FragmentStatsBinding
 
-class CalendarFragment : Fragment() {
+class StatsFragment : Fragment() {
 
-    private lateinit var binding: FragmentCalenderBinding
+    private lateinit var binding: FragmentStatsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_calender, container, false)
+        return inflater.inflate(R.layout.fragment_stats, container, false)
 
     }
 

@@ -1,8 +1,12 @@
-package com.mihaelmarjanovic.dailylog
+package com.mihaelmarjanovic.dailylog.ui
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.mihaelmarjanovic.dailylog.ui.calendar.CalendarFragment
+import com.mihaelmarjanovic.dailylog.ui.logger.LoggerFragment
+import com.mihaelmarjanovic.dailylog.ui.settings.SettingsFragment
+import com.mihaelmarjanovic.dailylog.ui.stats.StatsFragment
 
 class ViewPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
 
@@ -23,6 +27,17 @@ class ViewPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return "Tab " + (position + 1)
+        if(position == 0){
+            return "Daylog"
+        }
+        else if(position == 1){
+            return "Calendar"
+        }
+        else if(position == 2){
+            return "Stats"
+        }
+        else {
+            return "Settings"
+        }
     }
 }

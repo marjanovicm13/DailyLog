@@ -13,4 +13,7 @@
     <color name="btnFour">#8adbc8</color>
     <color name="btnFive">#4bd185</color>
     <color name="btnSix">#0be629</color>
+    <color name="red">#c23b23</color>
+    <color name="green">#059b4e</color>
+    <color name="yellow">#eada52</color>
 </resources>

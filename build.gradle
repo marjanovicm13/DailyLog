@@ -1,26 +1,89 @@
+/*
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = "1.4.32"
     repositories {
         google()
-        jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.1.1"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath 'com.android.tools.build:gradle:7.2.1'
+        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+
+    ext{
+
+        // Room database:
+        room_version = "2.4.2"
+        room = "androidx.room:room-runtime:$room_version"
+        room_compiler = "androidx.room:room-compiler:$room_version"
+        room_ktx = "androidx.room:room-ktx:$room_version" // Kotlin Extensions and Coroutines support for Room
+
+        // Scopes:
+        lifecycle_scope_version = "2.4.1"
+        lifecylce_scope = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_scope_version" // LifecycleScope
+    }
 }
 
-allprojects {
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+*/
+/*allprojects {
     repositories {
         google()
         jcenter()
     }
+}*//*
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}*/
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+    }
+
+    ext{
+        // Navigation:
+        navigation_version = "2.4.1"
+        navigation_fragment_ktx = "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+        navigation_ui_ktx = "androidx.navigation:navigation-ui-ktx:$navigation_version"
+        navigation_safe_args_gradle_plugin = "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
+
+        // Room database:
+        room_version = "2.4.2"
+        room = "androidx.room:room-runtime:$room_version"
+        room_compiler = "androidx.room:room-compiler:$room_version"
+        room_ktx = "androidx.room:room-ktx:$room_version" // Kotlin Extensions and Coroutines support for Room
+
+        // Scopes:
+        lifecycle_scope_version = "2.4.1"
+        lifecylce_scope = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_scope_version" // LifecycleScope
+    }
+
+    dependencies {
+        classpath navigation_safe_args_gradle_plugin
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
